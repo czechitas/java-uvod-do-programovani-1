@@ -1,41 +1,59 @@
 package cz.czechitas.promenne;
 
-import net.sevecek.console.*;
+import java.util.*;
 
 public class SpousteciTrida {
 
     public static void main(String[] args) {
-        TextConsole.setInputCharset("UTF-8");
+        Scanner console = new Scanner(System.in);
 
-        for (int kedlubna=0; kedlubna<10; kedlubna++) {
-            System.out.println("Králík");
-            for (int mrkev=0; mrkev<3; mrkev++) {
-                System.out.println("Husa");
-            }
+        /*
+        int volba;
+        System.out.println("Nemate-li dost penez, zadejte 1, jinak 0.");
+        volba = console.nextInt();
+        while (volba == 1) {
+            System.out.println("Osliku, otres se. Cink, cink, cink.");
+            System.out.println();
+            System.out.println("Nemate-li dost penez, zadejte 1, jinak 0.");
+            volba = console.nextInt();
         }
 
         /*
-        System.out.println("Osel");
-
-        for (int i = 0; i < 7; i++) {
-            System.out.println((i+1) + ". Králík");
+        int hozenoNaKostce;
+        hozenoNaKostce = (int) (Math.random() * 6 + 1);
+        System.out.println("Hodil jsem " + hozenoNaKostce);
+        while (hozenoNaKostce != 6) {
+            hozenoNaKostce = (int) (Math.random() * 6 + 1);
+            System.out.println("Hodil jsem " + hozenoNaKostce);
         }
         */
 
+        */
 
-        int praniUzivatele;
-        praniUzivatele = TextConsole.readInt();
-        while (praniUzivatele == 1) {
-            System.out.println("Osel");
-            praniUzivatele = TextConsole.readInt();
+        /*
+        for (int i=0; i<3; i++) {
+            System.out.println("Kralik");
+        }
+        */
+
+        /*
+        for (int i=0; i<4; i++) {
+            System.out.println("Tucnak");
+            for (int j=0; j<2; j++) {
+                System.out.println("Opice");
+            }
+        }
+        */
+
+        System.out.println("Zadejte svuj vek: ");
+        int vek;
+        vek = console.nextInt();
+        if (vek >= 18) {
+            System.out.println("Zde je vase pinacolada.");
+        } else {
+            System.out.println("Pro vas jen limonada.");
         }
 
-        double nahodneCislo;
-        nahodneCislo = Math.random();
-        System.out.println("Vygenerovali jsme " + nahodneCislo);
-        if (nahodneCislo > 0.5) {
-            System.out.println("Super");
-        }
     }
 
 }

@@ -1,15 +1,19 @@
 package cz.czechitas.promenne;
 
-import net.sevecek.console.*;
+import java.util.*;
 
 public class SpousteciTrida {
 
     public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
 
         /*
         System.out.println("Ahoj pozemstani, zavedte me ke svemu veliteli");
 
-        System.out.println("Tohle je dalsi text");
+        System.out.print("Ahoj");
+        System.out.print(" ");
+        System.out.print("zdravi Kamil");
+        System.out.println();
 
         System.out.println(10 + 20);
         System.out.println(10 - 20);
@@ -17,7 +21,6 @@ public class SpousteciTrida {
         System.out.println(10 / 20);
 
         System.out.println(2.5 * 6.0);
-        // Toto je moje poznamka
         System.out.println(9.0 / 2.0);
 
         System.out.println("Kamil" + " " + "Ševeček");
@@ -25,10 +28,11 @@ public class SpousteciTrida {
 
         System.out.println( Math.random() );
         System.out.println( Math.random() );
-        System.out.println( Math.cos( 3.1415 ) );
-
+        System.out.println( Math.cos( 3.14159265359 ) );
+        System.out.println( Math.cos( Math.PI / 2 ) );
+        */
+        /*
         int vek;
-
         vek = 36;
         //vek = "XXXX";
         System.out.println(vek);
@@ -41,31 +45,32 @@ public class SpousteciTrida {
         krestniJmeno = "Kamil";
         prijmeni = "Ševeček";
         System.out.println(krestniJmeno + " " + prijmeni);
+        */
 
+        /*
         String mesto;
-        TextConsole.setInputCharset("UTF-8");
-
         System.out.print("Zadejte svoje město (bydliště):");
-        mesto = TextConsole.readLine();
+        mesto = console.nextLine();
         System.out.println("Zadali jste: " + mesto);
 
         int rokNarozeni;
         System.out.print("Zadejte rok narozeni: ");
-        rokNarozeni = TextConsole.readInt();
+        rokNarozeni = console.nextInt();
+        System.out.println("Nacetl jsem " + rokNarozeni);
+        */
 
-        double vyskaUzivatele;
-        System.out.print("Zadejte svoji výšku: ");
-        vyskaUzivatele = TextConsole.readDouble();
-
-        double hmotnostUzivatele;
-        System.out.print("Zadejte svoji hmotnost: ");
-        hmotnostUzivatele = TextConsole.readDouble();
+        /*
+        double vyska;
+        double hmotnost;
+        System.out.println("Vlozte svoji vysku v metrech: ");
+        vyska = console.nextDouble();
+        System.out.println("Vlozte svoji hmotnost v kg: ");
+        hmotnost = console.nextDouble();
 
         double bmi;
-        bmi = hmotnostUzivatele /
-                ((vyskaUzivatele/100.0) *
-                (vyskaUzivatele/100.0));
-        System.out.println("Vase BMI je " + bmi);
+        bmi = hmotnost / (vyska * vyska);
+        System.out.print("Vase BMI je: ");
+        System.out.println(bmi);
         */
 
         double nahodneCislo;
