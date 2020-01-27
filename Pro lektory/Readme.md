@@ -67,8 +67,8 @@ Video z minulych behu
 
 Pro inspiraci, odkazy na videa z minula:
 
-- Uvod do programovani 14. 7. 2018
-<https://www.youtube.com/watch?v=2lwKLYT2nkk>
+- Uvod do programovani 25. 1. 2020
+<https://www.youtube.com/watch?v=VLmw5oaKkag>
 
 - Uvod do programovani 8. 12. 2018
 <https://www.youtube.com/watch?v=rWg1ibqk55I>
@@ -82,7 +82,7 @@ Je treba, aby studentky provedly pokyny k instalaci v klidu doma. Instalace je v
 Myslenka je podobna treba XAMPu, ktery se taky da jen stahnout, rozbalit a pouzivat.
 
 Detailni pokyny k instalaci jsou na webu. Zaslete odkaz studentkam zhruba tyden pred akci:
-<https://javabrno.czechitas.cz/2019-jaro/install-community/>
+<https://javainstall.czechitas.cz/community/>
 
 
 
