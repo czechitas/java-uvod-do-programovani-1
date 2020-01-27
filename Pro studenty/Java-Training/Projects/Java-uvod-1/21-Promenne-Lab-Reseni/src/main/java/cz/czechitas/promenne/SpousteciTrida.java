@@ -67,6 +67,48 @@ public class SpousteciTrida {
         int obsah = delka * sirka;
         System.out.println("Obdelnik: obvod = " + obvod + ", obsah = " + obsah);
         */
+
+        /*
+        double cislo1;
+        double cislo2;
+        System.out.print("Zadejte prvni cislo: ");
+        cislo1 = console.nextDouble();
+        System.out.print("Zadejte druhe cislo: ");
+        cislo2 = console.nextDouble();
+        double soucet;
+        double rozdil;
+        double soucin;
+        double podil;
+        soucet = cislo1 + cislo2;
+        rozdil = cislo1 - cislo2;
+        soucin = cislo1 * cislo2;
+        podil = cislo1 / cislo2;
+        System.out.println("Pocitam: " + cislo1 + " + " + cislo2 + " = " + soucet);
+        System.out.println("Pocitam: " + cislo1 + " - " + cislo2 + " = " + rozdil);
+        System.out.println("Pocitam: " + cislo1 + " * " + cislo2 + " = " + soucin);
+        System.out.println("Pocitam: " + cislo1 + " / " + cislo2 + " = " + podil);
+        */
+
+        /*
+        double delkaVMetrech;
+        System.out.print("Zadejte vzdálenost v metrech: ");
+        delkaVMetrech = console.nextDouble();
+        double delkaVCm;
+        double delkaVKm;
+        double delkaVMilich;
+        double delkaVYard;
+        double delkaVInch;
+        delkaVCm = delkaVMetrech * 100.0;
+        delkaVKm = delkaVMetrech / 1000.0;
+        delkaVMilich = delkaVMetrech * 0.000621371192;
+        delkaVYard = delkaVMetrech * 1.0936133;
+        delkaVInch = delkaVMetrech * 39.3700787;
+        System.out.println(delkaVCm + " cm");
+        System.out.println(delkaVKm + " km");
+        System.out.println(delkaVMilich + " mi");
+        System.out.println(delkaVYard + " yard");
+        System.out.println(delkaVInch + " inch");
+        */
     }
 
 }
