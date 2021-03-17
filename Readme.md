@@ -13,7 +13,7 @@ Cil workshopu
         * Vyvoj vetsich aplikaci
         * Web
         * Skriptovani (Operacniho systemu, Excelu/Google Sheets, Prohlizece [Selenium])
-    * Dat vedet, ze programovani ale neni jedina odborna cinnost s pocitaci
+    * Dat vedet, ze programovani nicmene neni jedina odborna cinnost s pocitaci
 
 * Ukazat, co znamena programatorsky editor (IDE) a konkretni pripad ve forme IntelliJ IDEA
 
