@@ -13,12 +13,12 @@ public class BirdTile extends GenericTile {
     private Icon uiDownSprite;
 
     public BirdTile() {
-        super("AngryBird-down.png");
+        super("player-down.png");
         orientation = BirdOrientation.SOUTH;
-        uiRightSprite = GameUtils.loadSprite("AngryBird-right.png");
-        uiLeftSprite = GameUtils.loadSprite("AngryBird-left.png");
-        uiUpSprite = GameUtils.loadSprite("AngryBird-up.png");
-        uiDownSprite = GameUtils.loadSprite("AngryBird-down.png");
+        uiRightSprite = GameUtils.loadSprite("player-right.png");
+        uiLeftSprite = GameUtils.loadSprite("player-left.png");
+        uiUpSprite = GameUtils.loadSprite("player-up.png");
+        uiDownSprite = GameUtils.loadSprite("player-down.png");
     }
 
     public void setOrientation(BirdOrientation orientation) {

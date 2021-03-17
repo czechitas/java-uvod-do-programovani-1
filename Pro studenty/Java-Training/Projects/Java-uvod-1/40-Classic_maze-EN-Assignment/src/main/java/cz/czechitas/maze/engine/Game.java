@@ -351,7 +351,7 @@ public class Game {
                 } else if (cell == Cell.GLASS_TRIANGLE) {
                     setWall(x, y, "glass-triangle.png");
                 } else if (cell == Cell.TNT) {
-                    setWall(x, y, "tnt.png");
+                    setWall(x, y, "bomb.png");
                 }
                 x++;
             }

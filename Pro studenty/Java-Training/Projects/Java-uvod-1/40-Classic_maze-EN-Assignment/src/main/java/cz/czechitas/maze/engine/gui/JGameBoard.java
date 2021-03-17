@@ -14,7 +14,7 @@ public class JGameBoard extends JLayeredPane {
     private JTile explosion;
 
     public JGameBoard() {
-        Icon imgBackground = GameUtils.loadSprite("Background.png");
+        Icon imgBackground = GameUtils.loadSprite("background.png");
         Dimension gameBoardSize = new Dimension(imgBackground.getIconWidth(), imgBackground.getIconHeight());
 
         setMinimumSize(gameBoardSize);
