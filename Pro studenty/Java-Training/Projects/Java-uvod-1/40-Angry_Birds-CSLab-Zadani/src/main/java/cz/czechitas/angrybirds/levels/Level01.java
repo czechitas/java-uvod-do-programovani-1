@@ -6,7 +6,7 @@ import static cz.czechitas.angrybirds.api.Commands.*;
 
 public class Level01 {
 
-    public void run() {
+    void run() {
         // TODO: Sem vepiste program pro Reda
 
         // Prikazy k pouziti:
@@ -17,7 +17,7 @@ public class Level01 {
 
     //-------------------------------------------------------------------------
 
-    public void setupGameBoard() {
+    void setupGameBoard() {
         Cell[][] cells = {
                 {Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX},
                 {Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX, Cell.WOODEN_BOX},
