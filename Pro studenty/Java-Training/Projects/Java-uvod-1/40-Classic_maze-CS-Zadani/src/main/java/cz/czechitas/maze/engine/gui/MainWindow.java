@@ -43,7 +43,7 @@ public class MainWindow extends JFrame implements VisualListener {
 
         //======== this ========
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Code.org - Angry Birds");
+        setTitle("Classic Maze");
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -250,7 +250,7 @@ public class MainWindow extends JFrame implements VisualListener {
         getRootPane().setDefaultButton(btnReset);
         btnReset.requestFocus();
         JOptionPane.showMessageDialog(this,
-                "Ale ne...! Angry bird musí strefit prase!",
+                "Ale ne...! Musíte strefit nepřítele!",
                 "Bohužel",
                 JOptionPane.ERROR_MESSAGE);
     }
@@ -263,7 +263,7 @@ public class MainWindow extends JFrame implements VisualListener {
         getRootPane().setDefaultButton(btnReset);
         btnReset.requestFocus();
         JOptionPane.showMessageDialog(this,
-                "Ještě tam nejsme. Angry bird musí strefit prase!",
+                "Ještě tam nejsme. Je třeba správně naprogramovat postavičku, aby strefila nepřítele!",
                 "Přihořívá...",
                 JOptionPane.INFORMATION_MESSAGE);
     }

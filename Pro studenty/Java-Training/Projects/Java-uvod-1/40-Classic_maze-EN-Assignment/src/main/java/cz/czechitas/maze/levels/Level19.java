@@ -48,8 +48,8 @@ public class Level19 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("One more puzzle with   if () else. Can you solve it right off?");
-        setGameBoardBirdPosition(1, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(2, 6);
+        setGameBoardPlayerPosition(1, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(2, 6);
     }
 
 }

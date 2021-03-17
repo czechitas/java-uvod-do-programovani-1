@@ -30,8 +30,8 @@ public class Level01 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Pomůžete mi chytit zatracené prase?\nNaprogramujte Redovi v editoru několik příkazů pro pohyb:\n\n    moveForward();\n\nPak stiskněte \"Start\".");
-        setGameBoardBirdPosition(3, 2, BirdOrientation.SOUTH);
-        setGameBoardPigPosition(3, 4);
+        setGameBoardPlayerPosition(3, 2, PlayerOrientation.SOUTH);
+        setGameBoardEnemyPosition(3, 4);
     }
 
 }

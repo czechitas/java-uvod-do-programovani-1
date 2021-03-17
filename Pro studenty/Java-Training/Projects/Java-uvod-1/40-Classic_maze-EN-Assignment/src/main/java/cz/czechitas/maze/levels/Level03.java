@@ -30,8 +30,8 @@ public class Level03 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Fidn the way to the bloody Pig! Avoid TNT or the feathers will fly!");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 4);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 4);
     }
 
 }

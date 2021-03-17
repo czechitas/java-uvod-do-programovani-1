@@ -30,8 +30,8 @@ public class Level04 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Naveďte mě k zelenému zlu! (Pozor na TNT)");
-        setGameBoardBirdPosition(2, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 3);
+        setGameBoardPlayerPosition(2, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 3);
     }
 
 }

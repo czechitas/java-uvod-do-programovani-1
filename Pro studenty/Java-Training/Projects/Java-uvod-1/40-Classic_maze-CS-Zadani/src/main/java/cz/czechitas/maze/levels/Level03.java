@@ -30,8 +30,8 @@ public class Level03 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Najděte cestu a veďte mě k tomu pošetilému praseti! Vyhněte se TNT, nebo bude peří létat.");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 4);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 4);
     }
 
 }

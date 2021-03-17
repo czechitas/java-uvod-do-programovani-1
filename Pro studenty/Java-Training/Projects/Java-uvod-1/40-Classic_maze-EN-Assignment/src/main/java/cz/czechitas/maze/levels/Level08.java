@@ -38,8 +38,8 @@ public class Level08 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Help me get rid of the annoying Pig in 5 commands.   for ()   loop can be nested in another   for ()");
-        setGameBoardBirdPosition(2, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 1);
+        setGameBoardPlayerPosition(2, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 1);
     }
 
 }

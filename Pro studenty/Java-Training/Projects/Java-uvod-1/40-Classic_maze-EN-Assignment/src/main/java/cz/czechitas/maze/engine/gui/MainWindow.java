@@ -43,7 +43,7 @@ public class MainWindow extends JFrame implements VisualListener {
 
         //======== this ========
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Code.org - Angry Birds");
+        setTitle("Classic Maze");
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -250,7 +250,7 @@ public class MainWindow extends JFrame implements VisualListener {
         getRootPane().setDefaultButton(btnReset);
         btnReset.requestFocus();
         JOptionPane.showMessageDialog(this,
-                "Oh no...! Angry bird must hit the Pig!",
+                "Oh no...! You must hit the enemy!",
                 "Sorry",
                 JOptionPane.ERROR_MESSAGE);
     }
@@ -263,7 +263,7 @@ public class MainWindow extends JFrame implements VisualListener {
         getRootPane().setDefaultButton(btnReset);
         btnReset.requestFocus();
         JOptionPane.showMessageDialog(this,
-                "Getting closer! Red must get the Pig",
+                "Getting closer! You must get the enemy",
                 "Your're getting warmer...",
                 JOptionPane.INFORMATION_MESSAGE);
     }

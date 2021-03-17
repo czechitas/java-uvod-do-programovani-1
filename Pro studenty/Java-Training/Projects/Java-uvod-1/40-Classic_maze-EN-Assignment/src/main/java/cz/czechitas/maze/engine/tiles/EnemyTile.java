@@ -1,8 +1,8 @@
 package cz.czechitas.maze.engine.tiles;
 
-public class PigTile extends GenericTile {
+public class EnemyTile extends GenericTile {
 
-    public PigTile() {
+    public EnemyTile() {
         super("enemy.png");
     }
 

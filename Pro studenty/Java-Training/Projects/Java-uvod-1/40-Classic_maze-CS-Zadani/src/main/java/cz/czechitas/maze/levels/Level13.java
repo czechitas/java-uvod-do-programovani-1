@@ -33,8 +33,8 @@ public class Level13 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dobře. Toto je podobné, jen trošičku odlišné. Zvládnete to vyřešit opět jen s 5 příkazy?");
-        setGameBoardBirdPosition(1, 1, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 6);
+        setGameBoardPlayerPosition(1, 1, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 6);
     }
 
 }

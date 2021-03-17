@@ -42,8 +42,8 @@ public class Level16 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Prase! Prase! Prase! Použijte příkaz   if ()   ... abyste mě k němu dostali s pomocí maximálně 4 příkazů.");
-        setGameBoardBirdPosition(6, 1, BirdOrientation.WEST);
-        setGameBoardPigPosition(4, 4);
+        setGameBoardPlayerPosition(6, 1, PlayerOrientation.WEST);
+        setGameBoardEnemyPosition(4, 4);
     }
 
 }

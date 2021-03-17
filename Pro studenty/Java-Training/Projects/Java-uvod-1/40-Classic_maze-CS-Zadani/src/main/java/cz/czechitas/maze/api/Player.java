@@ -1,9 +1,9 @@
 package cz.czechitas.maze.api;
 
-public class AngryBird {
+public class Player {
 
-    public AngryBird(int x, int y, BirdOrientation orientation) {
-        Commands.setGameBoardBirdPosition(x, y, orientation);
+    public Player(int x, int y, PlayerOrientation orientation) {
+        Commands.setGameBoardPlayerPosition(x, y, orientation);
     }
 
     public void moveForward() {

@@ -42,8 +42,8 @@ public class Level16 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Pig! Pig! Pig! Use command   if ()   ... to get me the Pig in just 4 commands.");
-        setGameBoardBirdPosition(6, 1, BirdOrientation.WEST);
-        setGameBoardPigPosition(4, 4);
+        setGameBoardPlayerPosition(6, 1, PlayerOrientation.WEST);
+        setGameBoardEnemyPosition(4, 4);
     }
 
 }

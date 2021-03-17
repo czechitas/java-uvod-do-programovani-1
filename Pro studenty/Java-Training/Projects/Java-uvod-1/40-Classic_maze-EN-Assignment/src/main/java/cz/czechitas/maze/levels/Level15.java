@@ -42,8 +42,8 @@ public class Level15 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Well, this is similar to the previous puzzle, but this time   if ()   and   while ()   together.");
-        setGameBoardBirdPosition(2, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(1, 6);
+        setGameBoardPlayerPosition(2, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(1, 6);
     }
 
 }

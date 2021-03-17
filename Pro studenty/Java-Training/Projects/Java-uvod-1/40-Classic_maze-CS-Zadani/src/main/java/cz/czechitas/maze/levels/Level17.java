@@ -42,8 +42,8 @@ public class Level17 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dobrá, pro jistotu to uděláme znovu - toto se moc neliší, ale pozor na stěny!");
-        setGameBoardBirdPosition(5, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(3, 4);
+        setGameBoardPlayerPosition(5, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(3, 4);
     }
 
 }

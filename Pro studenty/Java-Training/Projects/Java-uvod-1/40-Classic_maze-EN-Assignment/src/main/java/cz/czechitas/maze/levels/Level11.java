@@ -33,8 +33,8 @@ public class Level11 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("One more time to mater it - can you do it with just 4 commands and the loop?:   while ()");
-        setGameBoardBirdPosition(2, 5, BirdOrientation.EAST);
-        setGameBoardPigPosition(2, 3);
+        setGameBoardPlayerPosition(2, 5, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(2, 3);
     }
 
 }

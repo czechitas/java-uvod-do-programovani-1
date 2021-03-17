@@ -30,8 +30,8 @@ public class Level05 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Zachovejte klid a pomozte mi najít to zlé prase. Už mě nebude dlouho zlobit!");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(5, 3);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(5, 3);
     }
 
 }

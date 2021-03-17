@@ -42,8 +42,8 @@ public class Level17 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Well, one more time, just to be sure - but mind the walls!");
-        setGameBoardBirdPosition(5, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(3, 4);
+        setGameBoardPlayerPosition(5, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(3, 4);
     }
 
 }

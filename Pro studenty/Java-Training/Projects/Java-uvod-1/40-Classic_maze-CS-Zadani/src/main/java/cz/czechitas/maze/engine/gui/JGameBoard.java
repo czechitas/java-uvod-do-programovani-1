@@ -9,8 +9,8 @@ public class JGameBoard extends JLayeredPane {
 
     private JLabel labBackground;
     private JPanel pnlWalls;
-    private JTile bird;
-    private JTile pig;
+    private JTile player;
+    private JTile enemy;
     private JTile explosion;
 
     public JGameBoard() {
@@ -40,12 +40,12 @@ public class JGameBoard extends JLayeredPane {
     }
 
     public void addTile(JTile tile) {
-        if (tile.getNonVisualTile() instanceof BirdTile) {
-            bird = tile;
-            add(bird, Integer.valueOf(3));
-        } else if (tile.getNonVisualTile() instanceof PigTile) {
-            pig = tile;
-            add(pig, Integer.valueOf(2));
+        if (tile.getNonVisualTile() instanceof PlayerTile) {
+            player = tile;
+            add(player, Integer.valueOf(3));
+        } else if (tile.getNonVisualTile() instanceof EnemyTile) {
+            enemy = tile;
+            add(enemy, Integer.valueOf(2));
         } else if (tile.getNonVisualTile() instanceof ExplosionTile) {
             explosion = tile;
             add(explosion, Integer.valueOf(4));
@@ -56,15 +56,15 @@ public class JGameBoard extends JLayeredPane {
 
     public void clear() {
         pnlWalls.removeAll();
-        if (bird != null) {
-            remove(bird);
+        if (player != null) {
+            remove(player);
         }
-        if (pig != null) {
-            remove(pig);
+        if (enemy != null) {
+            remove(enemy);
         }
         if (explosion != null) {
             remove(explosion);
-            bird.setVisible(false);
+            player.setVisible(false);
         }
     }
 }

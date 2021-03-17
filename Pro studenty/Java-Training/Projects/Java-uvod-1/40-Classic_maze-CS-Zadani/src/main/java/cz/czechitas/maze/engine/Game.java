@@ -21,8 +21,8 @@ public class Game {
     private ExecutorService executor;
     private PauseBarrier pauseBarrier;
 
-    private BirdTile bird;
-    private PigTile pig;
+    private PlayerTile player;
+    private EnemyTile enemy;
     private GenericTile explosion;
     private List<GenericTile> walls;
     private String challengeText;
@@ -36,8 +36,8 @@ public class Game {
         visualListener = NoOpVisualListener.getInstance();
         pauseBarrier = new PauseBarrier();
         explosion = new ExplosionTile();
-        bird = new BirdTile();
-        pig = new PigTile();
+        player = new PlayerTile();
+        enemy = new EnemyTile();
         walls = new ArrayList<>();
 
         // Public API hack so that public API can expose public static moveForward(); etc.
@@ -93,8 +93,8 @@ public class Game {
     public List<GenericTile> getAllTiles() {
         List<GenericTile> tiles = new ArrayList<>(walls.size() + 3);
         tiles.addAll(walls);
-        tiles.add(bird);
-        tiles.add(pig);
+        tiles.add(player);
+        tiles.add(enemy);
         tiles.add(explosion);
         return tiles;
     }
@@ -199,8 +199,8 @@ public class Game {
     }
 
     private void clearPreviousLevel() {
-        bird.setPosition(-1, -1);
-        pig.setPosition(-1, -1);
+        player.setPosition(-1, -1);
+        enemy.setPosition(-1, -1);
         explosion.setPosition(-1, -1);
         clearWalls();
         challengeText = "";
@@ -222,8 +222,8 @@ public class Game {
             GameUtils.notifyVisualListener(visualListener::nullEndExecuted);
         } catch (CancellationException e) {
             // CancellationException is thrown if the program is either:
-            // - finished by bird killing pig
-            // - finished by bird killing itself
+            // - finished by player killing enemy
+            // - finished by player killing itself
             // - reset (stopped)
             // - MainWindow is closed
             //
@@ -234,84 +234,84 @@ public class Game {
 
     //- - - - - - - - -
 
-    public void moveBirdForward() {
+    public void movePlayerForward() {
         pauseBarrier.goThrough();
-        uiMoveBird();
+        uiMovePlayer();
         ThreadUtils.sleep(STEP_TIMEOUT);
     }
 
-    public void turnBirdLeft() {
+    public void turnPlayerLeft() {
         pauseBarrier.goThrough();
-        bird.turnLeft();
+        player.turnLeft();
         ThreadUtils.sleep(STEP_TIMEOUT);
     }
 
-    public void turnBirdRight() {
+    public void turnPlayerRight() {
         pauseBarrier.goThrough();
-        bird.turnRight();
+        player.turnRight();
         ThreadUtils.sleep(STEP_TIMEOUT);
     }
 
-    public boolean isBirdPathForward() {
+    public boolean isPlayerPathForward() {
         pauseBarrier.goThrough();
-        return uiBirdPathForward();
+        return uiPlayerPathForward();
     }
 
-    public boolean isBirdPathLeft() {
+    public boolean isPlayerPathLeft() {
         pauseBarrier.goThrough();
-        return uiBirdPathLeft();
+        return uiPlayerPathLeft();
     }
 
-    public boolean isBirdPathRight() {
+    public boolean isPlayerPathRight() {
         pauseBarrier.goThrough();
-        return uiBirdPathRight();
+        return uiPlayerPathRight();
     }
 
     //- - - - - - - - -
 
-    private void uiMoveBird() {
-        bird.move();
-        detectBirdOutOfRange();
-        detectCollisionBirdAndPig();
+    private void uiMovePlayer() {
+        player.move();
+        detectPlayerOutOfRange();
+        detectCollisionPlayerAndEnemy();
         detectCollisionWithWall();
     }
 
-    private boolean uiBirdPathForward() {
-        Coordinates lookCoord = bird.getForwardLook();
+    private boolean uiPlayerPathForward() {
+        Coordinates lookCoord = player.getForwardLook();
         return isWall(lookCoord.getX(), lookCoord.getY());
     }
 
-    private boolean uiBirdPathLeft() {
-        Coordinates lookCoord = bird.getLeftLook();
+    private boolean uiPlayerPathLeft() {
+        Coordinates lookCoord = player.getLeftLook();
         return isWall(lookCoord.getX(), lookCoord.getY());
     }
 
-    private boolean uiBirdPathRight() {
-        Coordinates lookCoord = bird.getRightLook();
+    private boolean uiPlayerPathRight() {
+        Coordinates lookCoord = player.getRightLook();
         return isWall(lookCoord.getX(), lookCoord.getY());
     }
 
-    private void detectBirdOutOfRange() {
-        if (bird.getX() < 0 || bird.getX() >= 8 || bird.getY() < 0 || bird.getY() >= 8) {
-            dieBird();
+    private void detectPlayerOutOfRange() {
+        if (player.getX() < 0 || player.getX() >= 8 || player.getY() < 0 || player.getY() >= 8) {
+            killPlayer();
         }
     }
 
-    public void detectCollisionBirdAndPig() {
+    public void detectCollisionPlayerAndEnemy() {
         if (!notFinished()) {
             explode();
         }
     }
 
     public boolean notFinished() {
-        return bird.getX() != pig.getX() || bird.getY() != pig.getY();
+        return player.getX() != enemy.getX() || player.getY() != enemy.getY();
     }
 
     public void explode() {
-        int x = pig.getX();
-        int y = pig.getY();
-        pig.setPosition(-1, -1);
-        bird.setPosition(-1, -1);
+        int x = enemy.getX();
+        int y = enemy.getY();
+        enemy.setPosition(-1, -1);
+        player.setPosition(-1, -1);
         explosion.setPosition(x, y);
         ThreadUtils.sleep(3L * STEP_TIMEOUT);
         terminate();
@@ -322,13 +322,13 @@ public class Game {
         for (GenericTile wall : walls) {
             int wallX = wall.getX();
             int wallY = wall.getY();
-            if (wallX == bird.getX() && wallY == bird.getY()) {
-                dieBird();
+            if (wallX == player.getX() && wallY == player.getY()) {
+                killPlayer();
             }
         }
     }
 
-    public void dieBird() {
+    public void killPlayer() {
         ThreadUtils.sleep(3L * STEP_TIMEOUT);
         terminate();
         GameUtils.notifyVisualListener(visualListener::negativeEndExecuted);
@@ -388,13 +388,13 @@ public class Game {
 
     //-------------------------------------------------------------------------
 
-    public void setBirdPosition(int x, int y, BirdOrientation orientation) {
-        bird.setPosition(x, y);
-        bird.setOrientation(orientation);
+    public void setPlayerPosition(int x, int y, PlayerOrientation orientation) {
+        player.setPosition(x, y);
+        player.setOrientation(orientation);
     }
 
-    public void setPigPosition(int x, int y) {
-        pig.setPosition(x, y);
+    public void setEnemyPosition(int x, int y) {
+        enemy.setPosition(x, y);
     }
 
 }

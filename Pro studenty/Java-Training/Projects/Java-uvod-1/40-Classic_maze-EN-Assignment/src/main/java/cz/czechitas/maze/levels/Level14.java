@@ -50,8 +50,8 @@ public class Level14 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Use   if ()  command block ... to tell me when to turn. Add just 1 command");
-        setGameBoardBirdPosition(3, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(5, 1);
+        setGameBoardPlayerPosition(3, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(5, 1);
     }
 
 }

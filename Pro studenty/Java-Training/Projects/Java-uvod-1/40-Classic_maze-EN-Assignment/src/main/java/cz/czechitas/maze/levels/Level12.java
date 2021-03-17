@@ -33,8 +33,8 @@ public class Level12 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("I must get the pig! Can you use maximum of 5 commands?");
-        setGameBoardBirdPosition(1, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 1);
+        setGameBoardPlayerPosition(1, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 1);
     }
 
 }

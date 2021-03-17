@@ -48,8 +48,8 @@ public class Level18 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Příkaz   if () else   vyhodnotí podmínku a provede jednu věc A NEBO druhou.");
-        setGameBoardBirdPosition(5, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(0, 3);
+        setGameBoardPlayerPosition(5, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(0, 3);
     }
 
 }

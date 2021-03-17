@@ -30,8 +30,8 @@ public class Level05 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Keep calm and catch the Pig. It won't annoy me much longer!");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(5, 3);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(5, 3);
     }
 
 }

@@ -34,8 +34,8 @@ public class Level07 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dostaňte mě k zelenému vetřelci za použití 3 příkazů.");
-        setGameBoardBirdPosition(4, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 7);
+        setGameBoardPlayerPosition(4, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 7);
     }
 
 }

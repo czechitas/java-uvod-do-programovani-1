@@ -1,6 +1,6 @@
 package cz.czechitas.maze.api;
 
-public enum BirdOrientation {
+public enum PlayerOrientation {
 
     WEST,
     EAST,

@@ -30,8 +30,8 @@ public class Level01 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Can you help me to catch the naughty pig?\nProgram Red in editor commands for movement:\n\n    moveForward();\n\nThen hit \"Start\".");
-        setGameBoardBirdPosition(3, 2, BirdOrientation.SOUTH);
-        setGameBoardPigPosition(3, 4);
+        setGameBoardPlayerPosition(3, 2, PlayerOrientation.SOUTH);
+        setGameBoardEnemyPosition(3, 4);
     }
 
 }

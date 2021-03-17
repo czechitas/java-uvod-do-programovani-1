@@ -33,8 +33,8 @@ public class Level10 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dobře. Zkuste nový příkaz   while ()   ... znamená \"opakovat, dokud platí\". Třeba opakovat, dokud nechytím to otravné prase.");
-        setGameBoardBirdPosition(1, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 4);
+        setGameBoardPlayerPosition(1, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 4);
     }
 
 }

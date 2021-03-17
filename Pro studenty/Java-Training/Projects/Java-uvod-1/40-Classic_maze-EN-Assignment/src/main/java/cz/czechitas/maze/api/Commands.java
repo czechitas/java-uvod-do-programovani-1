@@ -11,27 +11,27 @@ public class Commands {
     }
 
     public static void moveForward() {
-        game.moveBirdForward();
+        game.movePlayerForward();
     }
 
     public static void turnLeft() {
-        game.turnBirdLeft();
+        game.turnPlayerLeft();
     }
 
     public static void turnRight() {
-        game.turnBirdRight();
+        game.turnPlayerRight();
     }
 
     public static boolean isPathForward() {
-        return game.isBirdPathForward();
+        return game.isPlayerPathForward();
     }
 
     public static boolean isPathLeft() {
-        return game.isBirdPathLeft();
+        return game.isPlayerPathLeft();
     }
 
     public static boolean isPathRight() {
-        return game.isBirdPathRight();
+        return game.isPlayerPathRight();
     }
 
     public static boolean notFinished() {
@@ -46,12 +46,12 @@ public class Commands {
         game.setChallengeText(text);
     }
 
-    public static void setGameBoardBirdPosition(int x, int y, BirdOrientation orientation) {
-        game.setBirdPosition(x, y, orientation);
+    public static void setGameBoardPlayerPosition(int x, int y, PlayerOrientation orientation) {
+        game.setPlayerPosition(x, y, orientation);
     }
 
-    public static void setGameBoardPigPosition(int x, int y) {
-        game.setPigPosition(x, y);
+    public static void setGameBoardEnemyPosition(int x, int y) {
+        game.setEnemyPosition(x, y);
     }
 
 }

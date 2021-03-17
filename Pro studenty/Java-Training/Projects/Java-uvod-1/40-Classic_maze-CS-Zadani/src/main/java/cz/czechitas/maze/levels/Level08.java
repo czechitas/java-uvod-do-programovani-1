@@ -38,8 +38,8 @@ public class Level08 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Pomozte mi se zbavit toho zlobivého prasete pomocí 5 příkazů. Cyklus   for ()   se dá vnořit do jiného cyklu   for ()");
-        setGameBoardBirdPosition(2, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 1);
+        setGameBoardPlayerPosition(2, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 1);
     }
 
 }

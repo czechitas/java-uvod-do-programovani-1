@@ -42,8 +42,8 @@ public class Level15 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dobře, tohle je stejné jako předchozí hádanka, ale tentokrát musíte složit příkaz   if ()   a příkaz   while ()   dohromady sami.");
-        setGameBoardBirdPosition(2, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(1, 6);
+        setGameBoardPlayerPosition(2, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(1, 6);
     }
 
 }

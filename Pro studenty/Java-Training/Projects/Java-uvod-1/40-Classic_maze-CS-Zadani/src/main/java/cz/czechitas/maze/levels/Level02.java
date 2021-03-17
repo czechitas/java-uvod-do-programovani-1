@@ -30,8 +30,8 @@ public class Level02 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("To prase mi pije krev. Pomozte mi ho dostat!");
-        setGameBoardBirdPosition(2, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(5, 4);
+        setGameBoardPlayerPosition(2, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(5, 4);
     }
 
 }

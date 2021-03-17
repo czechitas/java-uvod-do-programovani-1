@@ -36,8 +36,8 @@ public class Level07 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Take me to the green alien in just 3 commands.");
-        setGameBoardBirdPosition(4, 2, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 7);
+        setGameBoardPlayerPosition(4, 2, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 7);
     }
 
 }

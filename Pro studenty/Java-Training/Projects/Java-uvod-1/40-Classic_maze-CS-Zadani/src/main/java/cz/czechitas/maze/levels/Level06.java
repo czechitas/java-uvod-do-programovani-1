@@ -40,8 +40,8 @@ public class Level06 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Existuje způsob, jak se mohu dostat k zelenému praseti za použití pouze 2 příkazů. Přijdete na něj?");
-        setGameBoardBirdPosition(1, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 4);
+        setGameBoardPlayerPosition(1, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 4);
     }
 
 }

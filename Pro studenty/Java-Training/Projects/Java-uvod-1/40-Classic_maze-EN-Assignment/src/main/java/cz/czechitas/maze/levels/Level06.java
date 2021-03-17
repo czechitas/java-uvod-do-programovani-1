@@ -43,8 +43,8 @@ public class Level06 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("There is a way to get to the green Pig in just 2 commands. Can you figure it out?");
-        setGameBoardBirdPosition(1, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 4);
+        setGameBoardPlayerPosition(1, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 4);
     }
 
 }

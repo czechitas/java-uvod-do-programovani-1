@@ -38,8 +38,8 @@ public class Level09 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Za pomoci maximálně 4 příkazů mě dostaňte k praseti! První příkaz musí být   for ()");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(2, 5);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(2, 5);
     }
 
 }

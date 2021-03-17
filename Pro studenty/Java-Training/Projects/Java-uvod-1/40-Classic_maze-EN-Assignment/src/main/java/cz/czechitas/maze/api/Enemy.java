@@ -1,9 +1,9 @@
 package cz.czechitas.maze.api;
 
-public class Pig {
+public class Enemy {
 
-    public Pig(int x, int y) {
-        Commands.setGameBoardPigPosition(x, y);
+    public Enemy(int x, int y) {
+        Commands.setGameBoardEnemyPosition(x, y);
     }
 
     public boolean notFinished() {

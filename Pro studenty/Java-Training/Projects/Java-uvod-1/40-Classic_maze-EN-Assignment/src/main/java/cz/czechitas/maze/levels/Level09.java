@@ -38,8 +38,8 @@ public class Level09 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Get the Pig with no more than 4 commands! First command must be   for ()");
-        setGameBoardBirdPosition(2, 3, BirdOrientation.EAST);
-        setGameBoardPigPosition(2, 5);
+        setGameBoardPlayerPosition(2, 3, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(2, 5);
     }
 
 }

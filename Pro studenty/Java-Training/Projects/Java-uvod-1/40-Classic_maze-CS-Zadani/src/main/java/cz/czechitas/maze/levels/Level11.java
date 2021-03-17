@@ -33,8 +33,8 @@ public class Level11 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Dobře, ještě jednou pro procvičení - dokážete vyřešit tento úkol za použití pouze 4 příkazů s cyklem   while ()   ?");
-        setGameBoardBirdPosition(2, 5, BirdOrientation.EAST);
-        setGameBoardPigPosition(2, 3);
+        setGameBoardPlayerPosition(2, 5, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(2, 3);
     }
 
 }

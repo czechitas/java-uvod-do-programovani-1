@@ -30,8 +30,8 @@ public class Level04 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Lead me to the green evil! (Mind the TNT)");
-        setGameBoardBirdPosition(2, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(4, 3);
+        setGameBoardPlayerPosition(2, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(4, 3);
     }
 
 }

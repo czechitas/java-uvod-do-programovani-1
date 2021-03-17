@@ -33,8 +33,8 @@ public class Level13 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Well. Just a little differently this time. Maximum 5 commands?");
-        setGameBoardBirdPosition(1, 1, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 6);
+        setGameBoardPlayerPosition(1, 1, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 6);
     }
 
 }

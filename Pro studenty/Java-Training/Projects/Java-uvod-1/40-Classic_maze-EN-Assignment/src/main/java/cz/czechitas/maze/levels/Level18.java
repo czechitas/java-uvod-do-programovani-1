@@ -48,8 +48,8 @@ public class Level18 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Command   if () else   evaluates the condition and executes commands EITHER / OR.");
-        setGameBoardBirdPosition(5, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(0, 3);
+        setGameBoardPlayerPosition(5, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(0, 3);
     }
 
 }

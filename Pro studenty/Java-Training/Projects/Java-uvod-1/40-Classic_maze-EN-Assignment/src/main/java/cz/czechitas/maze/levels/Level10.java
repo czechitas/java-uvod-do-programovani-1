@@ -33,8 +33,8 @@ public class Level10 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Try a new command   while ()   ... it means \"repeat, while condition holds\". How about repeat some commands until I catch the Pig?");
-        setGameBoardBirdPosition(1, 4, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 4);
+        setGameBoardPlayerPosition(1, 4, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 4);
     }
 
 }

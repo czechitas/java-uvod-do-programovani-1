@@ -33,8 +33,8 @@ public class Level12 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Musím se dostat k tomu praseti. Dostanete mě tam za použití jen 5 příkazů?");
-        setGameBoardBirdPosition(1, 6, BirdOrientation.EAST);
-        setGameBoardPigPosition(6, 1);
+        setGameBoardPlayerPosition(1, 6, PlayerOrientation.EAST);
+        setGameBoardEnemyPosition(6, 1);
     }
 
 }
