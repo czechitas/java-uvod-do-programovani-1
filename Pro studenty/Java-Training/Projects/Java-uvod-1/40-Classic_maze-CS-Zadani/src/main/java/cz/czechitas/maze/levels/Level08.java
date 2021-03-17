@@ -10,10 +10,10 @@ public class Level08 {
         // TODO: Sem vepiste program pro Reda
 
         // Zkus použít více než jeden blok "for".
-        // for (int count = 0; count < 4; count++) {
+        // for (var count = 0; count < 4; count++) {
         //     prikazy
         // }
-        // for (int count2 = 0; count2 < 5; count2++) {
+        // for (var count2 = 0; count2 < 5; count2++) {
         //     prikazy
         // }
 

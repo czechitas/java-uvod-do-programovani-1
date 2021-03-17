@@ -10,8 +10,8 @@ public class Level06 {
         // TODO: Sem vepiste program pro Reda
 
         // Priklad pouziti cyklu:
-        for (int count = 0; count < 4; count++) {
-            // Jakekoliv prikazy z minula, napriklad:
+        for (var count = 0; count < 4; count++) {
+            // Jakekoliv prikazy z minula. Napriklad:
             turnLeft();
         }
 
@@ -20,8 +20,10 @@ public class Level06 {
         // turnLeft();
         // turnRight();
         // moveForward();
-        // for (int count = 0; count < 3; count++) {
-        //     prikazy
+        // for (var count = 0; count < 3; count++) {
+        //     prikaz
+        //     prikaz
+        //     prikaz
         // }
     }
 

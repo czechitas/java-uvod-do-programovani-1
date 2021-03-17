@@ -11,9 +11,8 @@ public class Level06 {
 
         // Sample loop:
         for (var count = 0; count < 4; count++) {
-            // All commands from previous levels:
+            // Any command from previous levels. Such as:
             turnLeft();
-            moveForward();
         }
 
 

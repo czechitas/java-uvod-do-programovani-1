@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cz.czechitas.java</groupId>
-    <artifactId>angry_maze</artifactId>
+    <artifactId>classic_maze</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -29,7 +29,7 @@
     </dependencies>
 
     <build>
-        <finalName>Angry_Maze</finalName>
+        <finalName>Classic_Maze</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

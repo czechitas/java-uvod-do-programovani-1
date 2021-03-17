@@ -10,7 +10,7 @@ public class Level09 {
         // TODO: Sem vepiste program pro Reda
 
         // Prvni prikaz musi byt for-cyklus:
-        for (int count = 0; count < 2; count++) {
+        for (var count = 0; count < 2; count++) {
             // Sem vepiste dalsi 3 prikazy, abyste dostaly prase!
         }
 
@@ -18,7 +18,7 @@ public class Level09 {
         // turnLeft();
         // turnRight();
         // moveForward();
-        // for (int count = 0; count < 4; count++) {
+        // for (var count = 0; count < 4; count++) {
         //     prikazy
         // }
     }
