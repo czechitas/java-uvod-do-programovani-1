@@ -6,13 +6,13 @@
 
     <groupId>cz.czechitas.java</groupId>
     <artifactId>podminky_a_cykly</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-        <maven.test.skip>true</maven.test.skip>
+        <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
@@ -28,7 +28,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>

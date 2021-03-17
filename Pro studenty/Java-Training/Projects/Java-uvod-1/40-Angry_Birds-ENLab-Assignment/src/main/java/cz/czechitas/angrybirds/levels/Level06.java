@@ -10,7 +10,7 @@ public class Level06 {
         // TODO: Write a program for Red
 
         // Sample loop:
-        for (int count = 0; count < 4; count++) {
+        for (var count = 0; count < 4; count++) {
             // All commands from previous levels:
             turnLeft();
             moveForward();
@@ -21,7 +21,7 @@ public class Level06 {
         // turnLeft();
         // turnRight();
         // moveForward();
-        // for (int count = 0; count < 3; count++) {
+        // for (var count = 0; count < 3; count++) {
         //     command
         //     command
         //     command
