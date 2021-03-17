@@ -17,6 +17,7 @@ public class SpousteciTrida {
             System.out.println("Nemate-li dost penez, zadejte 1, jinak 0.");
             volba = console.nextInt();
         }
+        */
 
         /*
         int hozenoNaKostce;
@@ -26,8 +27,6 @@ public class SpousteciTrida {
             hozenoNaKostce = (int) (Math.random() * 6 + 1);
             System.out.println("Hodil jsem " + hozenoNaKostce);
         }
-        */
-
         */
 
         /*
@@ -45,8 +44,8 @@ public class SpousteciTrida {
         }
         */
 
-        System.out.println("Zadejte svuj vek: ");
         int vek;
+        System.out.println("Zadejte svuj vek: ");
         vek = console.nextInt();
         if (vek >= 18) {
             System.out.println("Zde je vase pinacolada.");

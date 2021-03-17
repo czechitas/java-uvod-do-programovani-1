@@ -23,6 +23,9 @@ public class SpousteciTrida {
         System.out.println(2.5 * 6.0);
         System.out.println(9.0 / 2.0);
 
+        System.out.println(6 + 10 * 5);
+        System.out.println("7 + 5");
+
         System.out.println("Kamil" + " " + "Ševeček");
         System.out.println(1 + 2 + "Kamil" + " ");
 
