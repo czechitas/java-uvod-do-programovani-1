@@ -60,7 +60,7 @@ public class Level20 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Can you solve the puzzle using just 3 commands (to the correct places \"Add a command here\")? Quickly! The pig is smirking!");
-        setGameBoardBirdPosition(1, 6, BirdOrientation.EAST);
+        setGameBoardBirdPosition(1, 6, BirdOrientation.NORTH);
         setGameBoardPigPosition(2, 1);
     }
 

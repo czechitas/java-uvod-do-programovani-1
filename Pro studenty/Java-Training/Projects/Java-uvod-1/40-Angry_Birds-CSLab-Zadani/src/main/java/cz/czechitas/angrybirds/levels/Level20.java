@@ -60,7 +60,7 @@ public class Level20 {
         };
         setGameBoardCells(cells);
         setGameBoardChallengeText("Zvládnete vyřešit hádanku přidáním jen 3 příkazů (na místa s komentářem \"ZDE doplnte prikaz\")? Rychle! Prase se už šklebí!");
-        setGameBoardBirdPosition(1, 6, BirdOrientation.EAST);
+        setGameBoardBirdPosition(1, 6, BirdOrientation.NORTH);
         setGameBoardPigPosition(2, 1);
     }
 
