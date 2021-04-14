@@ -10,10 +10,10 @@ public class Level08 {
         // TODO: Write a program for Red
 
         // You can use more loops one after the other.
-        // for (int count = 0; count < 4; count++) {
+        // for (var count = 0; count < 4; count++) {
         //     commands
         // }
-        // for (int count2 = 0; count2 < 5; count2++) {
+        // for (var count2 = 0; count2 < 5; count2++) {
         //     commands
         // }
 

@@ -13,7 +13,7 @@ public class Level07 {
         // turnLeft();
         // turnRight();
         // moveForward();
-        // for (int count = 0; count < 4; count++) {
+        // for (var count = 0; count < 4; count++) {
         //     command
         //     command
         //     command

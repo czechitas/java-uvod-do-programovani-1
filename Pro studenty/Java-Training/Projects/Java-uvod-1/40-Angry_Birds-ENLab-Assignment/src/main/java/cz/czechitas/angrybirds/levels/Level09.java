@@ -10,7 +10,7 @@ public class Level09 {
         // TODO: Write a program for Red
 
         // First command must be for-loop:
-        for (int count = 0; count < 2; count++) {
+        for (var count = 0; count < 2; count++) {
             // Write 3 other commands to get the pig.
         }
 
@@ -18,7 +18,7 @@ public class Level09 {
         // turnLeft();
         // turnRight();
         // moveForward();
-        // for (int count = 0; count < 4; count++) {
+        // for (var count = 0; count < 4; count++) {
         //     command
         // }
     }

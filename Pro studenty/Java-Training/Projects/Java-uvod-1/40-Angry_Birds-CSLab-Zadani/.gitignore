@@ -58,34 +58,11 @@ fabric.properties
 # Log file
 *.log
 
-# Eclipse / STS
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-# NetBeans
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
 # BlueJ files
 *.ctxt
 
-### VS Code ###
-.vscode/
-
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
-# Maven wrapper override (always include)
-!.mvn/wrapper/maven-wrapper.jar
 
 # Package Files #
 # *.jar
